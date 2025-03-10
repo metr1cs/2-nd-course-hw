@@ -228,6 +228,12 @@
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 32);
 }
+.product__content {
+  padding: 48px;
+}
+.product__cart {
+  width: 1200px;
+}
 
 .revers {
   border-radius: 30px;
