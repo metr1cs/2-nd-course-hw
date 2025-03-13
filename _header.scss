@@ -1,8 +1,7 @@
 .header{
-  background: url("./image/header-index.jpeg");
+  background-color: rgb(225, 255, 143);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1440px;
   height: 800px;
   &__title {
     color: rgb(32, 32, 39);
@@ -35,6 +34,7 @@
       width: 247px;
       align-items: center;
       margin-top: 48px;
+    
 
       &:hover{
         background: rgb(255,255,255);
@@ -42,9 +42,9 @@
       }
     }
   &__content{
-    height: 244px;
-    padding-left: 124px;
+    
     padding-top: 196px;
+    
   }
   &__scroll{
     width: 100%;
@@ -52,7 +52,7 @@
     position: relative;
     height: 200px;
     white-space: nowrap;
-    top: 34%;
+    top: 19%;
 
     &-image{
       display: inline-block;

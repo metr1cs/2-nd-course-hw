@@ -11,8 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 .center{
-  padding-left: 124px;
+  padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 a {
   text-decoration: none;
+  
 }

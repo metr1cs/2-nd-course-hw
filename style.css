@@ -1,8 +1,7 @@
 .header {
-  background: url("./image/header-index.jpeg");
+  background-color: rgb(225, 255, 143);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1440px;
   height: 800px;
 }
 .header__title {
@@ -42,8 +41,6 @@
   color: rgb(32, 32, 39);
 }
 .header__content {
-  height: 244px;
-  padding-left: 124px;
   padding-top: 196px;
 }
 .header__scroll {
@@ -52,7 +49,7 @@
   position: relative;
   height: 200px;
   white-space: nowrap;
-  top: 34%;
+  top: 19%;
 }
 .header__scroll-image {
   display: inline-block;
@@ -68,13 +65,11 @@
 }
 
 .content {
-  background: url("/image/back-product.jpeg");
+  background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1440px;
 }
 .content__form {
-  padding-left: 119px;
   padding-top: 94px;
 }
 .content__title {
@@ -97,13 +92,10 @@
 .content__cart {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
-  gap: 32px;
 }
 .content__position {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  height: 1200px;
+  margin-top: 72px;
 }
 
 .cart {
@@ -112,6 +104,7 @@
   background: rgb(255, 255, 255);
   width: 378px;
   transition: transform 0.3s ease;
+  display: block;
 }
 .cart:hover {
   transform: scale(1.1);
@@ -141,34 +134,39 @@
 }
 .cart__content {
   padding: 32px 32px 36px 32px;
+  flex-grow: 1;
 }
 .cart-1 {
   height: 473px;
+  display: block;
 }
 .cart-2 {
   height: 512px;
+  display: block;
 }
 .cart-3 {
   height: 473px;
+  display: block;
 }
 .cart-4 {
   height: 551px;
+  display: block;
 }
 .cart-5 {
-  height: 512px;
+  height: 551px;
+  display: block;
 }
 .cart-6 {
   height: px;
 }
 
 .product {
-  background: url(./image/back-product.jpeg);
+  background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
   background-size: cover;
   width: 1440px;
 }
 .product__form {
-  padding-left: 119px;
   padding-top: 94px;
   gap: 32px;
   display: flex;
@@ -262,7 +260,8 @@ html {
 }
 
 .center {
-  padding-left: 124px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 a {

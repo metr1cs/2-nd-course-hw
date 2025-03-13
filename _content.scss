@@ -1,12 +1,12 @@
 .content{
-  background: url("/image/back-product.jpeg");
+  background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1440px;
+
   
   
   &__form{
-    padding-left: 119px;
+    
     padding-top: 94px;
   }
   &__title{
@@ -29,14 +29,12 @@
   &__cart{
    display: flex;
    flex-wrap: wrap;
-   margin-top: 72px;
-   gap: 32px;
+  
   
     
   }
   &__position{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+    height: 1200px;
+    margin-top: 72px;
   }
 }

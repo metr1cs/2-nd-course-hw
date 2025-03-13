@@ -4,6 +4,7 @@
   background: rgb(255, 255, 255);
   width: 378px;
   transition: transform 0.3s ease;
+  display: block;
   
 
   &:hover{
@@ -35,22 +36,28 @@
   }
   &__content{
     padding: 32px 32px 36px 32px;
+    flex-grow: 1;
   }
   &-1{
     height: 473px;
+    display: block;
     
   }
   &-2{
     height: 512px;
+    display: block;
   }
   &-3{
     height: 473px;
+    display: block;
   }
   &-4{
     height: 551px;
+    display: block;
   }
   &-5{
-    height: 512px;
+    height: 551px;
+    display: block;
   }
   &-6{
     height: px;
