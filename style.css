@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
+  position: relative;
 }
 .header__title {
   color: rgb(32, 32, 39);

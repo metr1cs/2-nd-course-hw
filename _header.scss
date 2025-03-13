@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
+  position: relative;
   
   
   &__title {
@@ -69,5 +70,7 @@
       transform: translateX(-100%);
     }
   }
+
+  
  
 }
