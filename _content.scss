@@ -1,9 +1,8 @@
 .content{
   background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
-  background-size: cover;
-
-  
+  background-image: url("./image/bigStar-content.png");
+  background-position: calc(100% + 142px) 76px;
   
   &__form{
     
