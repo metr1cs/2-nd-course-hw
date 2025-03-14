@@ -1,4 +1,4 @@
-@import 'header','footer','content','cart';
+@import 'header','footer','content','cart','product';
 
 *{
   margin: 0;
@@ -7,6 +7,14 @@
 body{
   font-family: "Montserrat", sans-serif;
 }
-.center{
-  padding-left: 124px;
+html {
+  scroll-behavior: smooth;
 }
+.center{
+  padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+a{
+  text-decoration: none;
+}
+@import 'tablet','mobile';

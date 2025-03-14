@@ -1,9 +1,12 @@
 .header{
-  background: url("./image/header-index.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1440px;
+  background-color: rgb(225, 255, 143);
   height: 800px;
+  position: relative;
+  background-image: url("./image/bigstar-header.png"),url(./image/midlStar-headerTop.png),url("./image/midStar-header-right.png");
+  //background-size: cover;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 490px) -330px, 63px 69px, calc(100% - 344px) calc(100% - 146px);
+
   &__title {
     color: rgb(32, 32, 39);
     font-size: 64px;
@@ -34,7 +37,8 @@
       height: 66px;
       width: 247px;
       align-items: center;
-      margin-top: 80px;
+      margin-top: 48px;
+    
 
       &:hover{
         background: rgb(255,255,255);
@@ -42,9 +46,9 @@
       }
     }
   &__content{
-    height: 244px;
-    padding-left: 124px;
+    
     padding-top: 196px;
+    
   }
   &__scroll{
     width: 100%;
@@ -52,7 +56,7 @@
     position: relative;
     height: 200px;
     white-space: nowrap;
-    top: 34%;
+    top: 19%;
 
     &-image{
       display: inline-block;
@@ -67,4 +71,7 @@
       transform: translateX(-100%);
     }
   }
+
+  
+ 
 }
