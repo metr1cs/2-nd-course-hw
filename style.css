@@ -1,9 +1,10 @@
 .header {
   background-color: rgb(225, 255, 143);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 800px;
   position: relative;
+  background-image: url("./image/bigstar-header.png"), url(./image/midlStar-headerTop.png), url("./image/midStar-header-right.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% + 490px) -330px, 63px 69px, calc(100% - 344px) calc(100% - 146px);
 }
 .header__title {
   color: rgb(32, 32, 39);
