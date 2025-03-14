@@ -24,3 +24,5 @@ console.log(user);
 
 let firstName = prompt ('Как тебя зовут?')
 alert(`Привет, ${firstName} !`);
+
+
