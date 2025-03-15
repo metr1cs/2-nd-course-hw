@@ -138,6 +138,7 @@
         &__content{
             width: 285px;
             height: 182px;
+            padding: 29px 32px;
         }
         &__name{
             color: rgb(32, 32, 39);
@@ -152,6 +153,12 @@
             font-weight: 400;
             line-height: 20px;
             text-align: left;
+            width: 233px;
+            margin-top: 16px;
+        }
+        &__button{
+            margin-top: 32px;
+            margin-bottom: 32px;
         }
     }
     .revers {
