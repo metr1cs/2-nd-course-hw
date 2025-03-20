@@ -1,0 +1,43 @@
+.gamecart{
+  display: flex;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  justify-content: space-between;
+  &__title{
+    color: rgb(32, 32, 39);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    text-align: left;
+  }
+  &__text{
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    padding-top: 24px;
+    padding-bottom: 54px;
+
+     }
+  &__content{
+    padding: 48px;
+    border-radius: 28px;
+
+  }
+  &__image{
+    border-radius: 30px;
+  }
+  &__link{
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    padding: 16px 75px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+
+  }
+}
