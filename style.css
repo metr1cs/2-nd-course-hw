@@ -98,8 +98,7 @@
 .content__cart {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
   row-gap: 32px;
   margin-top: 72px;
 }
@@ -162,4 +161,6 @@ body {
 
 .center {
   padding-left: 124px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
