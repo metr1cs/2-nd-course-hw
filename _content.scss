@@ -1,11 +1,11 @@
 .content{
-  background: url("./image/gameBlock.jpeg");
+  background-color: rgb(32, 32, 39);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 1470px;
-  width: 1440px;
+  background-image: url("./image/bigStar-content.png");
+  background-position: calc(100% + 142px) 76px;
+  
   &__form{
-    padding-left: 119px;
+    
     padding-top: 94px;
   }
   &__title{
@@ -26,13 +26,17 @@
     margin-top: 24px;
   }
   &__cart{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 32px;
-    row-gap: 32px;
-    margin-top: 72px;
+   display: flex;
+  gap: 32px;
+
+    
   }
   &__position{
+  
+    margin-top: 72px;
+  
+  }
+  &__block{
     display: flex;
     flex-direction: column;
     gap: 32px;
