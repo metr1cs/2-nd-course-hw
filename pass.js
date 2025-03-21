@@ -42,34 +42,81 @@
 // alert(a + b);
 // console.log(a + b);
 
-let monthNumber = prompt('Введите номер месяца')
+// let monthNumber = prompt('Введите номер месяца')
+//
+// switch (+monthNumber) {
+//     case 12:
+//     case 1 :
+//     case 2 :
+//         console.log('Зима')
+//         alert('Зима');
+//         break;
+//     case 3:
+//     case 4:
+//     case 5:
+//         console.log('Весна')
+//         alert('Весна');
+//         break;
+//     case 6:
+//     case 7:
+//     case 8:
+//         console.log('Лето')
+//         alert('Лето');
+//         break;
+//     case 9:
+//     case 10:
+//     case 11:
+//         console.log('Осень')
+//         alert('Осень');
+//         break;
+//
+//     default:
+//             console.log('Такого месяца и времени года не существует')
+// }
 
-switch (+monthNumber) {
-    case 12:
-    case 1 :
-    case 2 :
-        console.log('Зима')
-        alert('Зима');
-        break;
-    case 3:
-    case 4:
-    case 5:
-        console.log('Весна')
-        alert('Весна');
-        break;
-    case 6:
-    case 7:
-    case 8:
-        console.log('Лето')
-        alert('Лето');
-        break;
-    case 9:
-    case 10:
-    case 11:
-        console.log('Осень')
-        alert('Осень');
-        break;
+let j = "Привет"
+for (let i = 0; i < 2 ; i++) {
+    console.log(j);
+}
 
-    default:
-            console.log('Такого месяца и времени года не существует')
+
+for (let k = 1; k < 5 ; k++) {
+    console.log(k);
+}
+
+
+for (let m = 7; m <= 22 ; m++) {
+    console.log(m);
+}
+
+let obj = {
+    "Коля" : '200',
+    "Вася" : '300',
+    "Петя" : '400',
+}
+for (let key in obj){
+    console.log(`Имя сотрудника ${key} : зарплата ${obj[key]} долларов`);
+}
+
+
+
+let n = 1000;
+let num = 0;
+
+for (; n >= 50; num++) {
+    n = n / 2;
+}
+console.log("Результат деления:", n);
+console.log("Количество итераций:", num);
+
+
+const firstFriday = 5;
+
+
+let currentDay = firstFriday;
+
+
+while (currentDay <= 31) {
+    console.log(`Сегодня пятница, ${currentDay}-е число. Необходимо подготовить отчет.`);
+    currentDay += 7;
 }
