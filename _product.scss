@@ -2,12 +2,12 @@
     background-color: rgb(32, 32, 39);
     background-repeat: no-repeat;
     background-size: cover;
- 
     padding-top: 55px;
     padding-bottom: 148px;
-    padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     &__form{
-    
         padding-top: 76px;
         gap: 32px;
         display: flex;
@@ -15,84 +15,15 @@
       }
     &__title{
         color: rgb(255, 255, 255);
-        font-family: Montserrat;
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
-        letter-spacing: 0px;
         text-align: left;
+        padding-bottom: 41px;
        
     }
-    &__description{
-        border-radius: 30px;
-        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-        background: rgb(255, 255, 255);
-        width: 1200px;
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-        
-    }
-    &__image{
-        border-radius: 30px;
-    }
-    &__name{
-        color: rgb(32, 32, 39);
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 59px;
-        text-align: left;
-    }
-    &__text{
-        color: rgb(32, 32, 39);
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: left;
-        
-        margin-top: 24px;
-        width: 497px;
-    }
-    &__button{
-        background: rgb(32, 32, 39);
-        border-radius: 60px;
-        color: rgb(255, 255, 255);
-        width: 247px;
-        height: 66px;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 141.69%;
-        letter-spacing: 0%;
-        text-align: center;
-        padding: 16px 28px 16px 28px;
-        margin-top: 36px;
-        &:hover{
-            background: rgb(255,255,255);
-            color: rgb(32,32,32);
-        }
-    }
-    &__content{
-        padding: 48px;
-        width: 600px;
-    }
-    &__cart{
-        width: 1200px;
-        &-6{
-            padding: 0px;
-        }
-    }
-   
 
 
-.revers{
-    border-radius: 30px;
-    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-    background: rgb(255, 255, 255);
-    width: 1200px;
-    height: 500px;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 0px;
-}
+
+
 }

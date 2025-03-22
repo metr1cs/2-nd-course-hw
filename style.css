@@ -20,7 +20,6 @@
   line-height: 32px;
   text-align: left;
   margin-top: 24px;
-  width: 768px;
 }
 .header__button {
   box-sizing: border-box;
@@ -192,7 +191,9 @@
   background-size: cover;
   padding-top: 55px;
   padding-bottom: 148px;
-  padding-bottom: 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .product__form {
   padding-top: 76px;
@@ -202,79 +203,56 @@
 }
 .product__title {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  letter-spacing: 0px;
   text-align: left;
+  padding-bottom: 41px;
 }
-.product__description {
-  border-radius: 30px;
-  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-  background: rgb(255, 255, 255);
-  width: 1200px;
-  height: 500px;
+
+.gamecart {
   display: flex;
-  flex-direction: row;
-}
-.product__image {
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   border-radius: 30px;
+  background: rgb(255, 255, 255);
+  justify-content: space-between;
 }
-.product__name {
+.gamecart__title {
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
   text-align: left;
 }
-.product__text {
+.gamecart__text {
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  margin-top: 24px;
-  width: 497px;
+  padding-top: 24px;
+  padding-bottom: 54px;
 }
-.product__button {
-  background: rgb(32, 32, 39);
+.gamecart__content {
+  padding: 48px;
+  border-radius: 28px;
+}
+.gamecart__image {
+  border-radius: 30px;
+}
+.gamecart__link {
   border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px 75px;
   color: rgb(255, 255, 255);
-  width: 247px;
-  height: 66px;
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
-  letter-spacing: 0%;
   text-align: center;
-  padding: 16px 28px 16px 28px;
-  margin-top: 36px;
 }
-.product__button:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(32, 32, 32);
-}
-.product__content {
-  padding: 48px;
-  width: 600px;
-}
-.product__cart {
-  width: 1200px;
-}
-.product__cart-6 {
-  padding: 0px;
-}
-.product .revers {
-  border-radius: 30px;
-  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-  background: rgb(255, 255, 255);
-  width: 1200px;
-  height: 500px;
+
+.revers {
   display: flex;
-  flex-direction: row-reverse;
-  padding-left: 0px;
 }
 
 * {
@@ -313,30 +291,184 @@ a {
 }
 @media (min-width: 375px) and (max-width: 425px) {
   .center {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .header {
+    height: 700px;
   }
   .header__title {
     color: rgb(32, 32, 39);
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
-    letter-spacing: 0px;
     text-align: center;
   }
   .header__text {
     width: 296px;
-    font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0px;
+    padding-left: 52px;
+    align-items: center;
+  }
+  .header__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
     text-align: center;
-    vertical-align: middle;
+    width: 285px;
+    height: 55px;
+    margin-top: 31px;
+    margin-left: 55px;
   }
   .header__content {
     padding-top: 147px;
+  }
+  .header__scroll {
+    height: 40px;
+    align-items: center;
+  }
+  .content {
+    display: none;
+  }
+  .gamecart {
+    display: flex;
+    flex-direction: column;
+  }
+  .gamecart__title {
+    color: rgb(32, 32, 39);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+  }
+  .gamecart__text {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  .gamecart__content {
+    padding: 25px 28px 41px 28px;
+  }
+  .revers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .center {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .header {
+    height: 700px;
+  }
+  .header__title {
+    color: rgb(32, 32, 39);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__text {
+    width: 296px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    padding-left: 29px;
+    align-items: center;
+  }
+  .header__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    width: 285px;
+    height: 55px;
+    margin-top: 31px;
+    margin-left: 31px;
+  }
+  .header__content {
+    padding-top: 147px;
+  }
+  .header__scroll {
+    height: 40px;
+    align-items: center;
+  }
+  .content {
+    display: none;
+  }
+  .product {
+    padding-top: 50px;
+  }
+  .product__title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  .product__cart {
+    width: 100%;
+  }
+  .product__description {
+    width: 343px;
+    height: 529px;
+    display: flex;
+    flex-direction: column;
+  }
+  .product__content {
+    width: 285px;
+    height: 182px;
+    padding: 29px 32px;
+  }
+  .product__name {
+    color: rgb(32, 32, 39);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+  }
+  .product__text {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    width: 233px;
+    margin-top: 16px;
+  }
+  .product__button {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .revers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .gamecart__text {
+    padding-top: 16px;
+    padding-bottom: 44px;
+  }
+  .gamecart__link {
+    padding: 13px 94px;
+  }
+  .gamecart__content {
+    padding: 25px 28px 41px 28px;
   }
 }
 
