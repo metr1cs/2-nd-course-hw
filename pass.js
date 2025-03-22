@@ -80,7 +80,7 @@ for (let i = 0; i < 2 ; i++) {
 }
 
 
-for (let k = 1; k < 5 ; k++) {
+for (let k = 1; k <= 5 ; k++) {
     console.log(k);
 }
 
@@ -111,10 +111,7 @@ console.log("Количество итераций:", num);
 
 
 const firstFriday = 5;
-
-
 let currentDay = firstFriday;
-
 
 while (currentDay <= 31) {
     console.log(`Сегодня пятница, ${currentDay}-е число. Необходимо подготовить отчет.`);

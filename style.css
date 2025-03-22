@@ -295,7 +295,11 @@ a {
     padding-right: 17px;
   }
   .header {
+    background-color: rgb(225, 255, 143);
     height: 700px;
+    background-image: url("./image/midl star.png"), url("./image/smallright buttom.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 64px) -84px;
   }
   .header__title {
     color: rgb(32, 32, 39);
@@ -305,12 +309,11 @@ a {
     text-align: center;
   }
   .header__text {
-    width: 296px;
-    font-weight: 400;
+    color: rgb(32, 32, 39);
     font-size: 16px;
-    line-height: 100%;
-    padding-left: 52px;
-    align-items: center;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
   }
   .header__button {
     box-sizing: border-box;
@@ -369,7 +372,11 @@ a {
     padding-right: 17px;
   }
   .header {
+    background-color: rgb(225, 255, 143);
     height: 700px;
+    background-image: url("./image/midl star.png"), url("./image/smallTopleft.png"), url("./image/smallright buttom.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 89px) -84px, 39px 63px, 273px 558px;
   }
   .header__title {
     color: rgb(32, 32, 39);
