@@ -255,6 +255,41 @@
   display: flex;
 }
 
+#game-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#guess-input {
+  padding: 8px;
+  width: 100px;
+  margin: 10px;
+}
+
+#guess-button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#guess-button:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
