@@ -151,6 +151,16 @@
 <footer class="footer center">
     <h1 class="footer__title">Все права защищены.</h1>
 </footer>
-    <script src="./index.js" defer></script>
+    <div id="guess-number-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Угадай число от 1 до 100!</h2>
+            <input type="number" id="guess-input" placeholder="Введите число" min="1" max="100">
+            <button id="guess-button">Проверить</button>
+            <button id="close-button">Закрыть</button> <!-- Новая кнопка -->
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="./game1.js" defer></script>
 </body>
 </html>

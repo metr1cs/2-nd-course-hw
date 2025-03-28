@@ -3,22 +3,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const guessButton = document.getElementById('guess-button');
     const message = document.getElementById('message');
 
-    // Генерация случайного числа от 1 до 100
-    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
     let attempts = 0;
+
+    document.querySelector('.gamecart__link[href=""]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('guess-number-modal').style.display = 'flex';
+    });
+
+    document.querySelector('.close-modal').addEventListener('click', closeModal);
+
+    document.getElementById('close-button').addEventListener('click', closeModal);
 
     guessButton.addEventListener('click', function() {
         const userGuess = parseInt(guessInput.value);
         attempts++;
 
         if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
-            message.textContent = 'Пожалуйста, введите число от 1 до 100!';
+            message.textContent = 'Введите число от 1 до 100!';
             return;
         }
 
         if (userGuess === randomNumber) {
-            message.textContent = `Поздравляем! Вы угадали число ${randomNumber} за ${attempts} попыток!`;
-            guessInput.disabled = true;
+            message.textContent = `🎉 Поздравляем! Вы угадали число ${randomNumber} за ${attempts} попыток!`;
             guessButton.disabled = true;
         } else if (userGuess < randomNumber) {
             message.textContent = 'Загаданное число больше!';
@@ -26,14 +33,22 @@ document.addEventListener('DOMContentLoaded', function() {
             message.textContent = 'Загаданное число меньше!';
         }
 
-        guessInput.value = ''; // Очищаем поле ввода
-        guessInput.focus();    // Возвращаем фокус на поле
+        guessInput.value = '';
+        guessInput.focus();
     });
 
-    // Можно также добавить реакцию на нажатие Enter
     guessInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             guessButton.click();
         }
     });
+
+    function closeModal() {
+        document.getElementById('guess-number-modal').style.display = 'none';
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+        attempts = 0;
+        message.textContent = '';
+        guessInput.value = '';
+        guessButton.disabled = false;
+    }
 });
