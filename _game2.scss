@@ -1,0 +1,82 @@
+/* Стили для модального окна */
+#math-game-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#math-game-modal .modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+#math-game-modal .close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Улучшенные стили для контента */
+#math-game-modal h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.math-problem {
+  font-size: 2.5rem;
+  margin: 25px 0;
+  font-weight: bold;
+  color: #3498db;
+}
+
+#math-answer {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 12px;
+  font-size: 1.2rem;
+  width: 200px;
+  text-align: center;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+}
+
+#math-submit, #math-close {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#math-submit {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#math-close {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#math-submit:hover, #math-close:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

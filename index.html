@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -108,11 +108,11 @@
                 <img class="gamecart__image" src="./image/biggame-1.jpeg">
             </div>
             <div class="gamecart">
-                <img class="gamecart__image" src="./image/biggame-2.jpeg">
+                <img class="gamecart__image" src="./image/biggame-2.jpeg" alt="Простая арифметика">
                 <div class="gamecart__content">
                     <h3 class="gamecart__title">Простая арифметика</h3>
                     <p class="gamecart__text">Попробуй решить простые арифметические задачи.</p>
-                    <a class="gamecart__link" href="">Играть!</a>
+                    <a class="gamecart__link" href="#math-game-modal">Играть!</a>
                 </div>
             </div>
             <div class="gamecart revers">
@@ -161,6 +161,18 @@
             <p id="message"></p>
         </div>
     </div>
+    <div id="math-game-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Решите пример:</h2>
+            <p id="math-problem" class="math-problem">5 + 3</p>
+            <input type="number" id="math-answer" placeholder="Ваш ответ">
+            <button id="math-submit">Проверить</button>
+            <button id="math-close">Закрыть</button>
+            <p id="math-result"></p>
+        </div>
+    </div>
     <script src="./game1.js" defer></script>
+    <script src="./game2.js" defer></script>
 </body>
 </html>
