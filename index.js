@@ -238,3 +238,167 @@
 // const circle1 = createCircle(5);
 // const circle2 = createCircle(10);
 
+// Задание 1
+function displayUntilStopValue(numberSequence, stopValue = 10) {
+    for (const value of numberSequence) {
+        console.log(value);
+        if (value === stopValue) break;
+    }
+}
+
+const initialSequence = [1, 5, 4, 10, 0, 3];
+displayUntilStopValue(initialSequence);
+
+// Задание 2
+function locateValueIndex(dataArray, targetValue) {
+    return dataArray.indexOf(targetValue);
+}
+
+const numberCollection = [1, 5, 4, 10, 0, 3];
+console.log(locateValueIndex(numberCollection, 4));
+
+// Задание 3
+function combineWithSeparator(itemsArray, separator = ' ') {
+    return itemsArray.join(separator);
+}
+
+const digitSeries = [1, 3, 5, 10, 20];
+console.log(combineWithSeparator(digitSeries));
+
+// Задание 4
+function generateSquareMatrix(dimension, fillValue) {
+    return Array(dimension).fill().map(() => Array(dimension).fill(fillValue));
+}
+
+const squareGrid = generateSquareMatrix(3, 1);
+console.log(squareGrid);
+
+// Задание 5
+function appendElements(baseArray, elementsToAppend) {
+    baseArray.push(...elementsToAppend);
+    return baseArray;
+}
+
+const primaryArray = [1, 1, 1];
+const modifiedArray = appendElements(primaryArray, [2, 2, 2]);
+console.log(modifiedArray);
+
+// Задание 6
+function processMixedArray(inputArray) {
+    const sortedCopy = [...inputArray].sort();
+    return sortedCopy.filter(item => typeof item === 'number');
+}
+
+const mixedDataSample = [9, 8, 7, 'a', 6, 5];
+const processedOutput = processMixedArray(mixedDataSample);
+console.log(processedOutput);
+
+// Задание 7
+function numberGuessingGame(validNumbers) {
+    const userInput = prompt("Угадайте число от 1 до 10:");
+
+    if (userInput === null) {
+        alert("Вы отменили ввод");
+        return;
+    }
+
+    const guessedValue = Number(userInput);
+    if (isNaN(guessedValue)) {
+        alert("Пожалуйста, введите число");
+        return;
+    }
+
+    alert(validNumbers.includes(guessedValue) ? "Угадал!" : "Не угадал");
+}
+
+const secretValues = [9, 8, 7, 6, 5];
+numberGuessingGame(secretValues);
+
+// Задание 8
+function reverseCharacterSequence(text) {
+    return text.split('').reverse().join('');
+}
+
+const originalText = 'abcdef';
+const invertedText = reverseCharacterSequence(originalText);
+console.log(invertedText);
+
+// Задание 9
+function flattenNestedArrays(array2D) {
+    return [].concat(...array2D);
+}
+
+const nestedData = [[1, 2, 3], [4, 5, 6]];
+const linearData = flattenNestedArrays(nestedData);
+console.log(linearData);
+
+// Задание 10
+function logAdjacentSums(numSequence) {
+    for (let i = 0; i < numSequence.length - 1; i++) {
+        const current = numSequence[i];
+        const next = numSequence[i + 1];
+        console.log(`Сумма элементов ${i} и ${i+1}: ${current + next}`);
+    }
+}
+
+const randomNumSet = Array.from({length: 5}, () => Math.floor(Math.random() * 10) + 1);
+console.log("Сгенерированные числа:", randomNumSet);
+logAdjacentSums(randomNumSet);
+
+// Задание 11
+function computeSquaredValues(integerList) {
+    return integerList.map(x => x ** 2);
+}
+
+const inputDigits = [1, 2, 3, 4, 5];
+const squaredResults = computeSquaredValues(inputDigits);
+console.log(squaredResults);
+
+// Задание 12
+function measureWordLengths(wordList) {
+    return wordList.map(word => word.length);
+}
+
+const fruitNames = ["яблоко", "апельсин", "груша", "лимон"];
+const lengthMetrics = measureWordLengths(fruitNames);
+console.log(lengthMetrics);
+
+// Задание 13
+function extractNegativeValues(integerArray) {
+    return integerArray.filter(n => n < 0);
+}
+
+const signedNumbers = [1, -2, 3, -4, 5, -6];
+const negativeValues = extractNegativeValues(signedNumbers);
+console.log(negativeValues);
+
+// Задание 14
+function generateRandomIntegers(count, maxValue) {
+    return Array.from({length: count}, () => Math.floor(Math.random() * (maxValue + 1)));
+}
+
+function selectEvenNumbers(numArray) {
+    return numArray.filter(n => n % 2 === 0);
+}
+
+const randomIntegers = generateRandomIntegers(10, 10);
+const evenIntegers = selectEvenNumbers(randomIntegers);
+console.log("Исходные значения:", randomIntegers);
+console.log("Чётные значения:", evenIntegers);
+
+// Задание 15
+function createRandomDataset(size, minVal, maxVal) {
+    return Array.from({length: size}, () =>
+        Math.floor(Math.random() * (maxVal - minVal + 1)) + minVal
+    );
+}
+
+function calculateArithmeticMean(valueSet) {
+    const sum = valueSet.reduce((total, num) => total + num, 0);
+    return sum / valueSet.length;
+}
+
+const dataSample = createRandomDataset(6, 1, 10);
+const averageValue = calculateArithmeticMean(dataSample);
+console.log("Набор данных:", dataSample);
+console.log("Среднее значение:", averageValue);
