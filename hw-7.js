@@ -36,3 +36,13 @@ function arrayMinMax(arr) {
 
 const result = arrayMinMax(arrNumbers);
 console.log(`Минимальное значение: ${result.min}, Максимальное: ${result.max}`);
+
+// Задача 5
+function getRandomNumber(min = 1, max = 10) {
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(randomNumber);
+    return randomNumber;
+}
+
+getRandomNumber();
+getRandomNumber(5, 15);
