@@ -119,7 +119,7 @@
                 <div class="gamecart__content">
                     <h3 class="gamecart__title">Переверни текст</h3>
                     <p class="gamecart__text">Попробуй ввести текст, который<br>будет перевернут.</p>
-                    <a class="gamecart__link" href="">Играть!</a>
+                    <a class="gamecart__link" href="#reverse-text-modal">Играть!</a>
                 </div>
                 <img class="gamecart__image" src="./image/biggame-3.jpeg">
             </div>
@@ -128,7 +128,7 @@
                 <div class="gamecart__content">
                     <h3 class="gamecart__title">Викторина</h3>
                     <p class="gamecart__text">Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <a class="gamecart__link" href="">Играть!</a>
+                    <a class="gamecart__link" href="#quiz-modal">Играть!</a>
                 </div>
             </div>
             <div class="gamecart revers">
@@ -172,8 +172,31 @@
             <p id="math-result"></p>
         </div>
     </div>
+    <div id="reverse-text-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Переверни текст</h2>
+            <div class="input-group">
+                <input type="text" id="user-text" placeholder="Введите текст здесь...">
+                <button id="reverse-btn" class="game-btn">Перевернуть</button>
+            </div>
+            <div id="result" class="game-result"></div>
+        </div>
+    </div>
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Викторина</h2>
+            <div id="quiz-questions"></div>
+            <button id="quiz-submit">Проверить ответы</button>
+            <button id="quiz-close">Закрыть</button>
+            <p id="quiz-result"></p>
+        </div>
+    </div>
     <script src="./hw-7.js" defer></script>
     <script src="./game1.js" defer></script>
     <script src="./game2.js" defer></script>
+<script src="./game3.js" defer></script>
+<script src="./game4.js" defer></script>
 </body>
 </html>
