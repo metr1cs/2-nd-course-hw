@@ -46,3 +46,23 @@ function getRandomNumber(min = 1, max = 10) {
 
 getRandomNumber();
 getRandomNumber(5, 15);
+
+//Задача 6
+
+function generateRandomArray(num) {
+
+    if (!Number.isInteger(num) || num <= 0) {
+        console.error("Ошибка: требуется целое положительное число");
+        return [];
+    }
+
+    const length = Math.floor(num / 2);
+    const result = new Array(length);
+
+    for (let i = 0; i < length; i++) {
+        result[i] = Math.floor(Math.random() * (num + 1));
+    }
+
+    return result;
+}
+console.log(generateRandomArray(10));
