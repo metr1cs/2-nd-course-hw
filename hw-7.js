@@ -26,3 +26,13 @@ function numbers(number) {
 numbers(number);
 
 // Задача 4
+const arrNumbers = [52, 53, 49, 77, 21, 32];
+
+function arrayMinMax(arr) {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    return { min, max };
+}
+
+const result = arrayMinMax(arrNumbers);
+console.log(`Минимальное значение: ${result.min}, Максимальное: ${result.max}`);
