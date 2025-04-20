@@ -66,3 +66,5 @@ function generateRandomArray(num) {
     return result;
 }
 console.log(generateRandomArray(10));
+
+
