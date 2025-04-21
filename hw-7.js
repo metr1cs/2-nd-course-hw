@@ -138,3 +138,5 @@ function formatRussianDateTime(date) {
 
 const now = new Date();
 console.log(formatRussianDateTime(now));
+
+
