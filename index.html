@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,50 +10,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header ">
-        
-        <div class="header__content center">
-            <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
-            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
-            <a href="#content__title"><button class="header__button">Поехали!</button>
-            </a>
-           
-        </div>
-        <div class="header__scroll">
-            <img class="header__scroll-image" src="./image/header-bottom-scroll.jpeg" alt=""><img class="header__scroll-image" src="./image/header-bottom-scroll.jpeg" alt="">
-        </div>
-    </header>
-    <div class="content">
-        <div class="content__form center">
-                <h2 class="content__title" id="content__title">Об играх</h2>
-                <p class="content__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>
-                    Все игры доступны для пользования.</p>
-            <div class="content__position center">      
-                <div class="content__cart">
-                    <div class="content__block">
-                        <a class="product-card cart-1" href="#product-description-1">
-                            <article class="cart ">
-                                <img class="cart__image" src="./image/game-1.jpeg" alt="">
-                                    <div class="cart__content">
-                                        <h3 class="cart__text">Игра № 1</h3>
-                                        <h2 class="cart__title">Угадай число</h2>
-                                    </div>
-                            </article>
-                        </a>
-                    
-                        <a class="cart-4" href="#product-description-4" class="product-card">
-                            <article class="cart">
-                                <img class="cart__image" src="./image/game-4.jpeg" alt="">
-                                <div class="cart__content">
-                                    <h3 class="cart__text">Игра № 4</h3>
-                                    <h2 class="cart__title">Камень,<br>ножницы,<br>бумага</h2>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                    <div class="content__block">
-                    <a class="cart-2" href="#product-description-2" class="product-card">
-                        <article class="cart ">
+<header class="header">
+    <div class="header__content center">
+        <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+        <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
+        <a href="#content__title"><button class="header__button">Поехали!</button></a>
+    </div>
+    <div class="header__scroll">
+        <img class="header__scroll-image" src="./image/header-bottom-scroll.jpeg" alt=""><img class="header__scroll-image" src="./image/header-bottom-scroll.jpeg" alt="">
+    </div>
+</header>
+
+<div class="content">
+    <div class="content__form center">
+        <h2 class="content__title" id="content__title">Об играх</h2>
+        <p class="content__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>
+            Все игры доступны для пользования.</p>
+        <div class="content__position center">
+            <div class="content__cart">
+                <div class="content__block">
+                    <a class="product-card cart-1" href="#game-section-1">
+                        <article class="cart">
+                            <img class="cart__image" src="./image/game-1.jpeg" alt="">
+                            <div class="cart__content">
+                                <h3 class="cart__text">Игра № 1</h3>
+                                <h2 class="cart__title">Угадай число</h2>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a class="cart-4 product-card" href="#game-section-4">
+                        <article class="cart">
+                            <img class="cart__image" src="./image/game-4.jpeg" alt="">
+                            <div class="cart__content">
+                                <h3 class="cart__text">Игра № 4</h3>
+                                <h2 class="cart__title">Камень,<br>ножницы,<br>бумага</h2>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="content__block">
+                    <a class="cart-2 product-card" href="#game-section-2">
+                        <article class="cart">
                             <img class="cart__image" src="./image/game-2.jpeg" alt="">
                             <div class="cart__content">
                                 <h3 class="cart__text">Игра № 2</h3>
@@ -61,7 +59,7 @@
                             </div>
                         </article>
                     </a>
-                    <a class="cart-5" href="#product-description-5" class="product-card">
+                    <a class="cart-5 product-card" href="#game-section-5">
                         <article class="cart">
                             <img class="cart__image" src="./image/game-5.jpeg" alt="">
                             <div class="cart__content">
@@ -72,8 +70,8 @@
                     </a>
                 </div>
                 <div class="content__block">
-                    <a class="cart-3" href="#product-description-3" class="product-card">    
-                            <article class="cart ">
+                    <a class="cart-3 product-card" href="#game-section-3">
+                        <article class="cart">
                             <img class="cart__image" src="./image/game-3.jpeg" alt="">
                             <div class="cart__content">
                                 <h3 class="cart__text">Игра № 3</h3>
@@ -81,8 +79,8 @@
                             </div>
                         </article>
                     </a>
-                    <a class="cart-6" href="#product-description-6" class="product-card">
-                        <article class="cart ">
+                    <a class="cart-6 product-card" href="#game-section-6">
+                        <article class="cart">
                             <img class="cart__image" src="./image/game-6.jpeg" alt="">
                             <div class="cart__content">
                                 <h3 class="cart__text">Игра № 6</h3>
@@ -91,109 +89,145 @@
                         </article>
                     </a>
                 </div>
-                </div>
             </div>
         </div>
     </div>
-    <div class="product center">
-        <h2 class="product__title">Мини-игры</h2>
-            <div class="gamecart revers">
-                <div class="gamecart__content ">
-                    <h3 class="gamecart__title">Угадай число</h3>
-                    <p class="gamecart__text">Попробуй угадать случайное<br>число от 1 до 100.</p>
-                    <a class="gamecart__link" href="" id="product-description-1">Играть!</a>
-                </div>
-                <img class="gamecart__image" src="./image/biggame-1.jpeg">
-            </div>
-            <div class="gamecart">
-                <img class="gamecart__image" src="./image/biggame-2.jpeg" alt="Простая арифметика">
-                <div class="gamecart__content">
-                    <h3 class="gamecart__title">Простая арифметика</h3>
-                    <p class="gamecart__text">Попробуй решить простые арифметические задачи.</p>
-                    <a class="gamecart__link" href="#math-game-modal" id="product-description-2">Играть!</a>
-                </div>
-            </div>
-            <div class="gamecart revers">
-                <div class="gamecart__content">
-                    <h3 class="gamecart__title">Переверни текст</h3>
-                    <p class="gamecart__text">Попробуй ввести текст, который<br>будет перевернут.</p>
-                    <a class="gamecart__link" href="#reverse-text-modal" id="product-description-3">Играть!</a>
-                </div>
-                <img class="gamecart__image" src="./image/biggame-3.jpeg">
-            </div>
-            <div class="gamecart">
-                <img class="gamecart__image" src="./image/biggame-4.jpeg">
-                <div class="gamecart__content">
-                    <h3 class="gamecart__title">Викторина</h3>
-                    <p class="gamecart__text">Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <a class="gamecart__link" href="#quiz-modal" id="product-description-5">Играть!</a>
-                </div>
-            </div>
-            <div class="gamecart revers">
-                <div class="gamecart__content">
-                    <h3 class="gamecart__title">Камень,<br>ножницы,<br>бумага</h3>
-                    <p class="gamecart__text">Сыграй в популярную игру<br>против компьютера.</p>
-                    <a class="gamecart__link" href="" id="product-description-4">Играть!</a>
-                </div>
-                <img class="gamecart__image" src="./image/biggame-5.jpeg">
-            </div>
-            <div class="gamecart">
-                <img class="gamecart__image" src="./image/biggame-6.jpeg">
-                <div class="gamecart__content">
-                    <h3 class="gamecart__title">Генератор случайных<br>цветов</h3>
-                    <p class="gamecart__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <a class="gamecart__link" href="">Играть!</a>
-                </div>
-            </div>
+</div>
+
+<div class="product center">
+    <h2 class="product__title">Мини-игры</h2>
+    <div class="gamecart revers" id="game-section-1">
+        <div class="gamecart__content">
+            <h3 class="gamecart__title">Угадай число</h3>
+            <p class="gamecart__text">Попробуй угадать случайное<br>число от 1 до 100.</p>
+            <a class="gamecart__link" href="#guess-number-modal">Играть!</a>
+        </div>
+        <img class="gamecart__image" src="./image/biggame-1.jpeg">
     </div>
+
+    <div class="gamecart" id="game-section-2">
+        <img class="gamecart__image" src="./image/biggame-2.jpeg" alt="Простая арифметика">
+        <div class="gamecart__content">
+            <h3 class="gamecart__title">Простая арифметика</h3>
+            <p class="gamecart__text">Попробуй решить простые арифметические задачи.</p>
+            <a class="gamecart__link" href="#math-game-modal">Играть!</a>
+        </div>
+    </div>
+
+    <div class="gamecart revers" id="game-section-3">
+        <div class="gamecart__content">
+            <h3 class="gamecart__title">Переверни текст</h3>
+            <p class="gamecart__text">Попробуй ввести текст, который<br>будет перевернут.</p>
+            <a class="gamecart__link" href="#reverse-text-modal">Играть!</a>
+        </div>
+        <img class="gamecart__image" src="./image/biggame-3.jpeg">
+    </div>
+
+    <div class="gamecart" id="game-section-4">
+        <img class="gamecart__image" src="./image/biggame-4.jpeg">
+        <div class="gamecart__content">
+            <h3 class="gamecart__title">Камень, ножницы, бумага</h3>
+            <p class="gamecart__text">Сыграй в популярную игру против компьютера.</p>
+            <a class="gamecart__link" href="#rps-game-modal">Играть!</a>
+        </div>
+    </div>
+
+    <div class="gamecart revers" id="game-section-5">
+        <div class="gamecart__content">
+            <h3 class="gamecart__title">Викторина</h3>
+            <p class="gamecart__text">Отвечай на вопросы викторины с вариантами ответов.</p>
+            <a class="gamecart__link" href="#quiz-modal">Играть!</a>
+        </div>
+        <img class="gamecart__image" src="./image/biggame-5.jpeg">
+    </div>
+
+    <div class="gamecart" id="game-section-6">
+        <img class="gamecart__image" src="./image/biggame-6.jpeg">
+        <div class="gamecart__content">
+            <h3 class="gamecart__title">Генератор случайных<br>цветов</h3>
+            <p class="gamecart__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+            <a class="gamecart__link" href="#color-game-modal">Играть!</a>
+        </div>
+    </div>
+</div>
+
 <footer class="footer center">
     <h1 class="footer__title">Все права защищены.</h1>
 </footer>
-    <div id="guess-number-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Угадай число от 1 до 100!</h2>
-            <input type="number" id="guess-input" placeholder="Введите число" min="1" max="100">
-            <button id="guess-button">Проверить</button>
-            <button id="close-button">Закрыть</button> <!-- Новая кнопка -->
-            <p id="message"></p>
-        </div>
+
+<!-- Модальные окна -->
+<div id="guess-number-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Угадай число от 1 до 100!</h2>
+        <input type="number" id="guess-input" placeholder="Введите число" min="1" max="100">
+        <button id="guess-button">Проверить</button>
+        <button id="close-button">Закрыть</button>
+        <p id="message"></p>
     </div>
-    <div id="math-game-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Решите пример:</h2>
-            <p id="math-problem" class="math-problem">5 + 3</p>
-            <input type="number" id="math-answer" placeholder="Ваш ответ">
-            <button id="math-submit">Проверить</button>
-            <button id="math-close">Закрыть</button>
-            <p id="math-result"></p>
-        </div>
+</div>
+
+<div id="math-game-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Решите пример:</h2>
+        <p id="math-problem" class="math-problem">5 + 3</p>
+        <input type="number" id="math-answer" placeholder="Ваш ответ">
+        <button id="math-submit">Проверить</button>
+        <button id="math-close">Закрыть</button>
+        <p id="math-result"></p>
     </div>
-    <div id="reverse-text-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Переверни текст</h2>
-            <div class="input-group">
-                <input type="text" id="user-text" placeholder="Введите текст здесь...">
-                <button id="reverse-btn" class="game-btn">Перевернуть</button>
-            </div>
-            <div id="result" class="game-result"></div>
+</div>
+
+<div id="reverse-text-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Переверни текст</h2>
+        <div class="input-group">
+            <input type="text" id="user-text" placeholder="Введите текст здесь...">
+            <button id="reverse-btn" class="game-btn">Перевернуть</button>
         </div>
+        <div id="result" class="game-result"></div>
     </div>
-    <div id="quiz-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Викторина</h2>
-            <div id="quiz-questions"></div>
-            <button id="quiz-submit">Проверить ответы</button>
-            <button id="quiz-close">Закрыть</button>
-            <p id="quiz-result"></p>
+</div>
+
+<div id="rps-game-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Камень, ножницы, бумага</h2>
+        <div class="rps-buttons">
+            <button class="rps-choice" data-choice="rock">Камень</button>
+            <button class="rps-choice" data-choice="paper">Бумага</button>
+            <button class="rps-choice" data-choice="scissors">Ножницы</button>
         </div>
+        <div id="rps-result"></div>
     </div>
-    <script src="./hw-7.js" defer></script>
-    <script src="./game1.js" defer></script>
-    <script src="./game2.js" defer></script>
+</div>
+
+<div id="quiz-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Викторина</h2>
+        <div id="quiz-questions"></div>
+        <button id="quiz-submit">Проверить ответы</button>
+        <button id="quiz-close">Закрыть</button>
+        <p id="quiz-result"></p>
+    </div>
+</div>
+
+<div id="color-game-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Генератор случайных цветов</h2>
+        <button id="color-generator">Сгенерировать цвет</button>
+        <div id="color-display"></div>
+        <p id="color-hex"></p>
+    </div>
+</div>
+
+<script src="./hw-7.js" defer></script>
+<script src="./game1.js" defer></script>
+<script src="./game2.js" defer></script>
 <script src="./game3.js" defer></script>
 <script src="./game4.js" defer></script>
 </body>
