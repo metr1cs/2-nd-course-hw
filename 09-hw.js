@@ -15,6 +15,4 @@ btnEl.addEventListener('click',function (){
     else{
         descriptionEl.textContent = '';
     }
-
-
 })
