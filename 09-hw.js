@@ -23,8 +23,7 @@ const changeColorTextEl = document.querySelector('#changeColorText');
 const changeColorBtnEl = document.querySelector('#changeColorBtn');
 
 changeColorBtnEl.addEventListener('click', function(){
-    changeColorTextEl.style.color = 'bleu';
-
+    changeColorTextEl.style.color = 'blue';
 })
 
 // Задача 3
@@ -34,4 +33,26 @@ const addTextBtnEl = document.querySelector('#changeAddText');
 
 addTextBtnEl.addEventListener('click', function(){
     titleEl.textContent = 'Привет, мир!';
+})
+
+//Задача 4
+
+const changeDescriptionClass = document.querySelectorAll('.description');
+const changeTextBtnEl = document.querySelector('#changeTextBtn');
+
+changeTextBtnEl.addEventListener('click', function(){
+    changeDescriptionClass.forEach((changeDescriptionClass) => {
+        changeDescriptionClass.textContent = 'Измененный текст';
+    })
+});
+
+//Задача 5
+
+const descriptionTextEl = document.querySelectorAll('.description');
+const btnSomChangeTextEl = document.querySelector('#changeSomTextbtn');
+
+btnSomChangeTextEl.addEventListener('click', function(){
+    descriptionTextEl.forEach((changeDescriptionClass) => {
+        changeDescriptionClass.textContent = 'Новый текст';
+    })
 })
