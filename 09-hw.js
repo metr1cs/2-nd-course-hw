@@ -56,3 +56,26 @@ btnSomChangeTextEl.addEventListener('click', function(){
         changeDescriptionClass.textContent = 'Новый текст';
     })
 })
+
+//Задача 6
+
+const addBtnEl = document.querySelector('#addElementBtn');
+const contentEl = document.querySelector('.content');
+
+addBtnEl.addEventListener('click', function(){
+    const addTextElement = document.createElement('h2');
+    addTextElement.textContent = 'Новый абзац';
+    addTextElement.classList.add('newDescription');
+    contentEl.appendChild(addTextElement);
+
+})
+
+// Задача 7
+
+const delitebtnEl = document.querySelector('#delElementBtn');
+const removeContentEl = document.querySelector('.newDescription');
+
+delitebtnEl.addEventListener('click', function(){
+   const removeTextElement = document.querySelector('.newDescription');
+    removeTextElement.remove();
+})
