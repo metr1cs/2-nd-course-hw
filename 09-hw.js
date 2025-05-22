@@ -16,3 +16,13 @@ btnEl.addEventListener('click',function (){
         descriptionEl.textContent = '';
     }
 })
+
+const changeColorTextEl = document.querySelector('#changeColorText');
+const changeColorBtnEl = document.querySelector('#changeColorBtn');
+
+changeColorBtnEl.addEventListener('click', function(){
+    changeColorTextEl.style.color = 'bleu';
+
+})
+
+
