@@ -63,5 +63,8 @@ function getName(greeting) {
 }
 
 getName('Привет');
+function getName2(greeting){
+    return a + greeting;
+}
 
 
