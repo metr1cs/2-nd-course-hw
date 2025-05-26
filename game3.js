@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     const modal = document.getElementById('reverse-text-modal');
     const closeBtn = modal.querySelector('.close-modal');
     const reverseBtn = document.getElementById('reverse-btn');
     const textInput = document.getElementById('user-text');
     const resultDiv = document.getElementById('result');
 
-    document.querySelectorAll('.gamecart__link[href="#reverse-text-modal"], .cart-3').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            modal.style.display = 'flex';
-            textInput.focus();
-        });
+    // Обработчик только для кнопки "Играть!" в разделе мини-игр
+    document.querySelector('.gamecart__link[href="#reverse-text-modal"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.style.display = 'flex';
+        textInput.focus();
     });
 
+    // Закрытие модалки
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', function(e) {
         if (e.target === modal) closeModal();
     });
 
+    // Логика переворота текста
     reverseBtn.addEventListener('click', reverseText);
     textInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') reverseText();
