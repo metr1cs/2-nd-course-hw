@@ -28,43 +28,6 @@ getObjectsPrice(objects);
 
 //прочитать про map forEach garbage collector js.
 
+console.log('hello');
 
-
-function getNumberFibonachi (range){
-    let num = [0,1];
-
-    for (let i = num.length ; i < range; i++) {
-        let fib = num[i - 2] + num[i - 1]
-        num.push(fib);
-        console.log(fib);
-    }
-    console.log(num.includes(range));
-    const index = num.indexOf(range=> {console.log(index)});
-
-}
-getNumberFibonachi(21);
-
-
-function getDade (){
-    let date = new Date();
-    console.log(date.getFullYear()+'-'+date.getMonth()+'-'+date.getDate());
-}
-getDade();
-
-function getSumm (a , b){
-    let sum = a + b;
-    console.log(sum);
-}
-getSumm(5 , 10);
-
-function getName(greeting) {
-    let name = prompt("Как тебя зовут?");
-    console.log(greeting + ", " + name);
-}
-
-getName('Привет');
-function getName2(greeting){
-    return a + greeting;
-}
-
-
+let cars = ['volvo', 'bmw', 'audi','mercedes'];
