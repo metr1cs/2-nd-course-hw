@@ -13,13 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'scissors', name: 'Ножницы' },
         { id: 'paper', name: 'Бумага' }
     ];
-
-    // Открытие модального окна
-    playButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        modal.style.display = 'block';
-        resultDiv.innerHTML = '';
+// Открытие модалки
+    document.querySelectorAll('[href="#rps-game-modal"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex'; // Важно 'flex' вместо 'block'
+        });
     });
+    // // Открытие модального окна
+    // playButton.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     modal.style.display = 'block';
+    //     resultDiv.innerHTML = '';
+    // });
 
     // Закрытие модального окна
     closeBtn.addEventListener('click', function() {
